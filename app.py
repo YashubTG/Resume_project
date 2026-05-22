@@ -10,19 +10,17 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-#nltk.download('stopwords')
-#nltk.download('wordnet')
+
 
 try:
-    stop_words = set(stopwords.words('english'))
-except:
-    nltk.download('stopwords')
-    stop_words = set(stopwords.words('english'))
-
-try:
-    WordNetLemmatizer()
-except:
+    nltk.data.find('corpora/wordnet')
+except LookupError:
     nltk.download('wordnet')
+
+try:
+    nltk.data.find('corpora/stopwords')
+except LookupError:
+    nltk.download('stopwords')
 
 # Load all saved files
 with open("resume_classifier.pkl", "rb") as f:
