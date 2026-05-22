@@ -167,6 +167,10 @@ Through this project, the following concepts were practiced:
 
 ---
 
+## Live Demo
+
+https://your-app-name.streamlit.app
+
 # Conclusion
 
 This project demonstrates how machine learning and NLP can be used to automate resume screening and job role recommendation. It combines classification and semantic similarity techniques into a complete end-to-end application with an interactive web interface.
