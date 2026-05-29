@@ -187,7 +187,7 @@ Through this project, the following concepts were practiced:
 
 ## Live Demo
 
-https://resumeproject-qmjqne34jjp4dl7igy5wcb.streamlit.app/
+https://resume-fit-ai.streamlit.app/
 
 # Conclusion
 
