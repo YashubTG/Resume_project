@@ -40,6 +40,8 @@ The project was developed as a practical data science and NLP portfolio project 
 * NumPy
 * Scikit-learn
 * NLTK
+* XGBoost
+* LightGBM
 * Pickle
 * Regular Expressions (re)
 
@@ -62,11 +64,24 @@ The resume dataset was cleaned and preprocessed using:
 
 TF-IDF Vectorization was used to convert textual resume data into numerical feature vectors.
 
-## 3. Resume Classification
+## 3. Model Training and Evaluation
 
-A machine learning classification model was trained to predict the most suitable job category from resume text.
+Multiple machine learning algorithms were trained and evaluated for resume classification:
 
-## 4. Job Recommendation System
+* Logistic Regression
+* Linear Support Vector Classifier (Linear SVC)
+* Naive Bayes
+* Random Forest
+* XGBoost
+* LightGBM
+
+The models were compared using classification performance metrics, and LightGBM achieved the best overall results. Therefore, LightGBM was selected as the final model for deployment in the Resume Screening System.
+
+## 4. Resume Classification
+
+The final LightGBM classification model predicts the most suitable job category based on resume content.
+
+## 5. Job Recommendation System
 
 A cosine similarity-based recommendation system was implemented to identify the top matching job roles based on semantic similarity between resumes and job descriptions.
 
@@ -158,7 +173,10 @@ Through this project, the following concepts were practiced:
 
 * Machine Learning workflow
 * NLP preprocessing techniques
-* Text vectorization
+* Feature engineering using TF-IDF
+* Model comparison and evaluation
+* Classification algorithms
+* Ensemble learning methods
 * Model serialization using Pickle
 * Cosine similarity
 * Streamlit web app development
@@ -173,4 +191,5 @@ https://your-app-name.streamlit.app
 
 # Conclusion
 
-This project demonstrates how machine learning and NLP can be used to automate resume screening and job role recommendation. It combines classification and semantic similarity techniques into a complete end-to-end application with an interactive web interface.
+This project demonstrates how machine learning and NLP can be used to automate resume screening and job role recommendation. Multiple machine learning models were evaluated, including Logistic Regression, Linear SVC, Naive Bayes, Random Forest, XGBoost, and LightGBM. LightGBM delivered the best performance and was selected for deployment. The project combines classification and semantic similarity techniques into a complete end-to-end application with an interactive web interface.
+
