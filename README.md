@@ -187,7 +187,7 @@ Through this project, the following concepts were practiced:
 
 ## Live Demo
 
-https://your-app-name.streamlit.app
+https://resumeproject-qmjqne34jjp4dl7igy5wcb.streamlit.app/
 
 # Conclusion
 
